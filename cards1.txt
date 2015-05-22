@@ -1,0 +1,26 @@
+6 6 9
+/endCategory
+Andrew
+Ashley
+Amy
+Joey
+Panda
+Obama
+/endCategory
+Ketchup
+Mustard
+Syrup
+Sriracha
+Worcestershire
+Shoyu
+/endCategory
+Chair
+Table
+Couch
+Toilet
+Counter
+Dresser
+Cabinet
+Refrigerator
+Pantry
+/endCategory
