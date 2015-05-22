@@ -4,8 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		//Deck deck = new DeckV1("E:\\Documents\\GitHub\\clooncepts\\src\\playGame\\cards1.txt");
-		Deck deck = new DeckV1("/home/bogosayo/Dev/workspace/Clooncepts/src/playGame/cards1.txt");
+		Deck deck = new DeckV1("E:\\Development\\Git Stuff\\clooncepts\\src\\playGame\\cards1.txt");
+		//hi Deck deck = new DeckV1("/home/bogosayo/Dev/workspace/Clooncepts/src/playGame/cards1.txt");
 		/*
 		int numPlayers = 2;
 		Player players[] = createPlayers(numPlayers, deck);
