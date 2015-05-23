@@ -1,6 +1,6 @@
 package playGame;
 
-import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Player {
@@ -17,6 +17,19 @@ public class Player {
 
 	
 	public void revealHand(){
-		System.out.println(hand);
+		System.out.println(hand.size() + " cards:");
+		Iterator<Card> list = hand.iterator();
+		while (list.hasNext()){
+			System.out.print(list.next().getName() + ", ");
+
+		}
+	}
+
+	public static Player[] createPlayers(int num){
+		Player players[] = new Player[num];
+		for (int i = 0; i < num; i++){
+			players[i] = new Player();
+		}
+		return players;
 	}
 }

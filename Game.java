@@ -12,7 +12,7 @@ public class Game {
 		this.numPlayers = numPlayers;
 		this.turn = 0;
 		
-		this.player = new Player[numPlayers];
+		this.player = Player.createPlayers(numPlayers);
 
 		Dealer dealer = new Dealer(deck);
 		player = dealer.dealCards(player);
@@ -27,8 +27,8 @@ public class Game {
 	}
 	
 	private void revealCards(){
-		for(int i = 0; i<=numPlayers; i++){
-			System.out.println("\nPlayer " + i + " has:");
+		for(int i = 0; i<numPlayers; i++){
+			System.out.print("\nPlayer " + i + " has ");
 			player[i].revealHand();
 		}
 	}

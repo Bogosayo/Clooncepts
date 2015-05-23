@@ -12,11 +12,14 @@ public class Dealer {
     public Dealer(Deck deck){
         this.numCategories = deck.getDeck().size();
         this.stacks = new Stack[numCategories];
+        for (int n = 0; n < numCategories; n++){
+            this.stacks[n] = new Stack<Card>();
+        }
         int i = 0;
         for (Map.Entry<CardType, LinkedList<Card>> category : deck.getDeck().entrySet()){
-            this.stacks[i] = new Stack<Card>();
             this.stacks[i].addAll(category.getValue());
             Collections.shuffle(this.stacks[i]);
+            i++;
         }
 
 
@@ -36,7 +39,6 @@ public class Dealer {
     public Player[] dealCards(Player player[]){
         int numPlayers = player.length;
         /*** (1) ***/
-        player[0] = new Player();
         for(int i = 0; i < numCategories; i++) {
             player[0].addCard(stacks[i].pop());
         }
@@ -48,6 +50,7 @@ public class Dealer {
                 pIndex = 1;
             }
             player[pIndex].addCard(pile.pop());
+            pIndex++;
         }
 
         return player;

@@ -10,7 +10,7 @@ public class Main {
 		int numPlayers = 2;
 		Player players[] = createPlayers(numPlayers, deck);
 		*/
-		Game game = new Game(2,deck);
+		Game game = new Game(5,deck);
 		
 		game.endGame();
 
